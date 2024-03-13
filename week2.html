@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2주차 html basic</title>
+    <style>
+        span {color: red}
+    </style>
+</head>
+<body>
+    <hr>
+    <h3>링크 만들기</h3>
+
+    <a href="http://www.naver.com" target="_blank">네이버</a><br>
+    <a href="http://google.com" target="_blank">구글</a><br>
+    <a href="http://www.smu.ac.kr" target="_self">상명대</a><br>
+<hr>
+    <a href="http://www.naver.com" target="new">네이버</a><br>
+    <a href="http://google.com" target="new">구글</a><br>
+    <a href="http://www.smu.ac.kr" target="new">상명대</a><br>
+
+    <a href="">맨 아래로</a><br>
+    <a href="">지난 주 페이지</a><br>
+
+    <hr>
+    <h3>첫 번째 과제</h3>
+    table>tr*11>td*5
+    <table border=1 width="500">
+        <thead>
+        <tr>
+                <th>교시</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1교시</td>
+            <td></td>
+            <td rowspan=3 style="color:blue; background:pink">웹프로그래밍</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2교시</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+        </tr>
+        <tr>
+            <td>3교시</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+        </tr>
+        <tr>
+            <td>4교시</td>
+            <td></td>
+            <td rowspan=3>예술세계와탐구</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>5교시</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>6교시</td>
+            <td colspan=3>
+                <img src="./Images/test.jpg">
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7교시</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>8교시</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>9교시</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>10교시</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+    </table>
+
+
+    <hr>
+
+
+    <h3>표 만들기</h3>
+    table>tr*4>td*5 약어임
+    <table border=1 width="500">
+        <thead>
+        <tr>
+            <!--th는 굵은글씨에 가운데 정렬-->
+            <th>NAME</th>
+            <th>KOR</th>
+            <th>ENG</th>
+            <th>MATH</th>
+            <th>TOTAL</th>
+        </tr>
+        </thead>
+        <tfoot>
+            <!--thead는 항상 맨 위로 보내고 tfoot은 항상 아래로 내려줌-->
+            <tr>
+                <th>총점</th>
+                <th>국총</th>
+                <th>영총</th>
+                <th>수총</th>
+                <th>총총</th>
+            </tr>
+        </tfoot>
+        <thead>
+            <tr>
+                <!--td는 그냥 좌측정렬-->
+                <td>KIM</td>
+                <td>45</td>
+                <td>85</td>
+                <td>80</td>
+                <td>210</td>
+            </tr>
+        </thead>
+
+        <tr>
+            <td>JANG</td>
+            <td>70</td>
+            <td>80</td>
+            <td>40</td>
+            <td>190</td>
+        </tr>
+        <tr>
+            <td>PARK</td>
+            <td>30</td>
+            <td>30</td>
+            <td>30</td>
+            <td>90</td>
+        </tr>
+    </table>
+
+<Br>
+    <table border=2>
+        <tr>
+            <td>1111</td><td>222</td><td>333</td>
+        </tr>
+        <tr>
+            <td>1111</td><td>222</td><td>333</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h3>리스트 연습</h3>
+    
+    ul>li*3약어임
+    <ul>
+        <li>중식</li>
+        <li>한식</li>
+        <ul>
+            <li>김치찌개</li>
+            <li>된장찌개</li>
+        </ul>
+        <li>일식</li>
+        <li>양식</li>
+    </ul>
+
+    <h4>좋아하는 과목</h4>
+    <ol>
+        <li>웹프로그래밍</li>
+        <li>C programming</li>
+        <li>Java Programming</li>
+    </ol>
+    <h4>점심 메뉴</h4>
+    <ul>
+        <li>중식</li>
+        <li>한식</li>
+        <ul>
+            <li>김치찌개</li>
+            <li>된장찌개</li>
+        </ul>
+        <li>일식</li>
+        <li>양식</li>
+    </ul>
+
+    <h1 alt="head" tittle="큰 글씨"><!--있어봤지 의미가 없는 것! 왜냐면 오른쪽에 있는 문구가 안뜰 이유가 없기 때문에,
+         alt는 내가원래 하고 싶었던 것이 안뜰경우 대신 띄워주는 태그-->첫 번째 헤드 사이즈</h1>
+    <h2>두 번째 헤드</h2>
+    <h3>세 번째 헤드</h3>
+    <div>여러 <span>태그</span>가 없어도 내용 작성은 가능합니다.</div>
+    <div>두 번째 라인도 잘 보이나요?</div><!--span은 -->
+    <div>가장 많이 사용하는 <span>태그</span></div><!--div는한줄만 적힘. 자동으로 줄바꿈을 해줌-->
+    <div><span>태그</span> 종류가 많네요.</div>
+
+    <hr><!--줄을 그어주는 태그-->
+    <h3>속성을 연습하는 단계</h3>
+    <hr />
+    <!--아래 주소 불러오는 방식은 절대경로 방식 : 사용하지 말기.....상대경로를 사용합시다!!!!-->
+    <!--상대경로중 내가 위치한 곳에서 파일을 찾을 땐 .점 하나, 나보다 하나 상위의 폴더에서 찾을 땐 ..점 두개-->
+    <img src="./Images/test.jpg" width="250" height="150" alt="이미지 위치" tittle="IMAGE">
+    <!--height는 width에 의해 자동으로 맞춰지지만 추가하면 조절가능-->
+    <br>&nbsp;&nbsp;&nbsp;눌린 고양이
+    <!--&dbsp; - 스페이스바-->
+
+    <P>다음 라인에서 시작되는 paragraph</P>
+    &lt;p&gt;태그 다음 위치
+    <!--div는 그냥 줄을 나누는 역할이면 p는 단락을 나누는 태그임. 즉 간격이 좀 더 넓음-->
+    <div>블록태그 : 자동 엔터가 들어가는 종류 - hx, div, p</div>
+    <div>인라인태그 : 엔터 없이 다음 컨텐츠가 옆에 불여지는 종류 - span, img</div>
+    
+    <hr>
+    <h3>1부터 10까지 <del>총 합</del>을 구하는 코드</h3>
+    <pre style="background:black;color:white">
+    #inclde &lt;stdio.h&gt;
+        int main(void){
+            int i;
+            int sum = 0;
+            for(i=0;i<=10;i++){
+                sum+=i;
+            }
+            printf("총 합 : %d\n",sum);
+            return 0;
+        }
+    </pre>
+    <!--pre태그는 내가 줄바꿈 내가 꺽새 하는 걸 그대로 표기하고 싶을 때 사용하는 태그임!-->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt vero ipsum officiis hic libero dolorem sed amet corporis quidem voluptates assumenda quas, totam tempore iste eligendi, ipsam optio molestias inventore?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium porro, assumenda eum ab vero accusantium dicta eligendi obcaecati temporibus, aut, ipsum quos repellat id autem consequatur deserunt esse velit quia!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora hic atque dignissimos rerum vitae, ipsum sunt praesentium! Sint, vitae ipsam sunt aliquam distinctio tempora, dolorum nesciunt sit atque repellat eos!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cumque molestiae incidunt obcaecati? Nostrum, fuga reprehenderit! Dolore est expedita sed aspernatur voluptatibus modi dolores tenetur? Voluptate veritatis molestias aperiam sed?
+    </p>
+
+</body>
+</html>
